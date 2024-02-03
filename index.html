@@ -13,12 +13,21 @@
             position: fixed;  
             bottom: 0;  
             width: 100%;  
-        }  
+        }
+        .container {
+            width: 20%;
+            margin: 10% auto 0;
+            background-color: rgba(240, 240, 240, 0.5);
+            padding: 1% 0%;
+            border-radius: 20px
+        }
     </style>  
 </head>  
 <body>  
-    <h1 align="center">SparrowOS</h1>  
-    <h3 align="center">一个由几个学生独立开发的操作系统</h3>  
+	<div class="container">
+		<h1 align="center">SparrowOS</h1>  
+		<h3 align="center">一个由几个学生独立开发的操作系统</h3>  
+	</div>
     <div align="center">  
         <input type="button" style="background: linear-gradient(to bottom right, rgb(5, 218, 255), rgb(14, 232, 141)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="下载" onclick="location.href = 'download.html'">  
         <input type="button" style="background: linear-gradient(to bottom right, rgb(134, 5, 255), rgb(14, 203, 232)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="在github上查看" onclick="location.href = 'https://github.com/SparrowOS/SparrowOS-Develop'">  
