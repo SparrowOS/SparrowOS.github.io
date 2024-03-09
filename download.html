@@ -16,14 +16,22 @@
             padding: 1% 0%;
             border-radius: 20px
         }
+		.custom-button {
+			background: linear-gradient(to bottom right, rgb(255, 158, 51), rgb(255, 128, 0));
+			border: 0px;
+			border-radius: 15px;
+			width: 170px;
+			height: 60px;
+			color: #000000;
+		}
     </style>
 </head>
 <body>
     <h1  class="container">由于还没有开发完成，所以暂时不提供iso文件下载，仅提供img软盘镜像。如确实需要，请在gtihub上下载，顺便给个star哟！</h1>
     <div align="center">
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(134, 5, 255), rgb(14, 203, 232)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="在github上查看" onclick="location.href = 'https://github.com/SparrowOS/SparrowOS-Develop/releases'">
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(134, 5, 255), rgb(14, 203, 232)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="返回首页" onclick="location.href = 'https://sparrowos.github.io'">
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(134, 5, 255), rgb(14, 203, 232)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="下载img软盘镜像" onclick="location.href = 'https://raw.githubusercontent.com/SparrowOS/SparrowOS-Develop/main/SparrowOS.img'">
+        <input type="button" class="custom-button" value="在github上查看" onclick="location.href = 'https://github.com/SparrowOS/SparrowOS-Develop/releases'">
+        <input type="button" class="custom-button" value="返回首页" onclick="location.href = 'https://sparrowos.github.io'">
+        <input type="button" class="custom-button" value="下载img软盘镜像" onclick="location.href = 'https://raw.githubusercontent.com/SparrowOS/SparrowOS-Develop/main/SparrowOS.img'">
     </div>
 </body>
 </html>

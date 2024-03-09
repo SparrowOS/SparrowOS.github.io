@@ -21,108 +21,67 @@
             padding: 1% 0%;
             border-radius: 20px
         }
+		.custom-button {
+			background: linear-gradient(to bottom right, rgb(255, 158, 51), rgb(255, 128, 0));
+			border: 0px;
+			border-radius: 15px;
+			width: 170px;
+			height: 60px;
+			color: #000000;
+		}
     </style>  
-    <SCRIPT language=JavaScript>
+<!-- 	<script language=JavaScript>
+		var caution = false
+		function setCookie(name, value, expires, path, domain, secure) {
+		var curCookie = name + "=" + escape(value) +
+		((expires) ? "; expires=" + expires.toGMTString() : "") +
+		((path) ? "; path=" + path : "") +
+		((domain) ? "; domain=" + domain : "") +
+		((secure) ? "; secure" : "")
+		if (!caution || (name + "=" + escape(value)).length <= 4000)
+		document.cookie = curCookie
+		else
+		if (confirm("Cookie exceeds 4KB and will be cut!"))
+		document.cookie = curCookie
+		}
+		function getCookie(name) {
+		var prefix = name + "="
+		var cookieStartIndex = document.cookie.indexOf(prefix)
+		if (cookieStartIndex == -1)
+		return null
+		var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+		if (cookieEndIndex == -1)
+		cookieEndIndex = document.cookie.length
+		return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+		}
+		function deleteCookie(name, path, domain) {
+		if (getCookie(name)) {
+		document.cookie = name + "=" +
+		((path) ? "; path=" + path : "") +
+		((domain) ? "; domain=" + domain : "") +
+		"; expires=Thu, 01-Jan-70 00:00:01 GMT"
+		}
+		}
+		function fixDate(date) {
+		var base = new Date(0)
+		var skew = base.getTime()
+		if (skew > 0)
+		date.setTime(date.getTime() - skew)
+		}
+		var now = new Date()
+		fixDate(now)
+		now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+		var visits = getCookie("counter")
+		if (!visits)
+		visits = 1
+		else
+		visits = parseInt(visits) + 1
+		setCookie("counter", visits, now)
+		document.write("欢迎光临本站，您是第" + visits + "位访问者！")
+	</script> -->
+	<!-- 引入不蒜子计数 -->
+	<!-- <script async src="busuanzi.pure.mini.js"></script> -->
 
-<!--
-
-var caution = false
-
-function setCookie(name, value, expires, path, domain, secure) {
-
-var curCookie = name + "=" + escape(value) +
-
-((expires) ? "; expires=" + expires.toGMTString() : "") +
-
-((path) ? "; path=" + path : "") +
-
-((domain) ? "; domain=" + domain : "") +
-
-((secure) ? "; secure" : "")
-
-if (!caution || (name + "=" + escape(value)).length <= 4000)
-
-document.cookie = curCookie
-
-else
-
-if (confirm("Cookie exceeds 4KB and will be cut!"))
-
-document.cookie = curCookie
-
-}
-
-function getCookie(name) {
-
-var prefix = name + "="
-
-var cookieStartIndex = document.cookie.indexOf(prefix)
-
-if (cookieStartIndex == -1)
-
-return null
-
-var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
-
-if (cookieEndIndex == -1)
-
-cookieEndIndex = document.cookie.length
-
-return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
-
-}
-
-function deleteCookie(name, path, domain) {
-
-if (getCookie(name)) {
-
-document.cookie = name + "=" +
-
-((path) ? "; path=" + path : "") +
-
-((domain) ? "; domain=" + domain : "") +
-
-"; expires=Thu, 01-Jan-70 00:00:01 GMT"
-
-}
-
-}
-
-function fixDate(date) {
-
-var base = new Date(0)
-
-var skew = base.getTime()
-
-if (skew > 0)
-
-date.setTime(date.getTime() - skew)
-
-}
-
-var now = new Date()
-
-fixDate(now)
-
-now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
-
-var visits = getCookie("counter")
-
-if (!visits)
-
-visits = 1
-
-else
-
-visits = parseInt(visits) + 1
-
-setCookie("counter", visits, now)
-
-document.write("欢迎光临本站，您是第" + visits + "位访问者！")
-
-// -->
-
-</SCRIPT>
 
 </head>  
 <body>  
@@ -131,11 +90,14 @@ document.write("欢迎光临本站，您是第" + visits + "位访问者！")
         <h3 align="center">一个由几个学生独立开发的操作系统</h3>  
     </div>
     <div align="center">  
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(5, 218, 255), rgb(14, 232, 141)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="下载" onclick="location.href = 'download.html'">  
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(134, 5, 255), rgb(14, 203, 232)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="在github上查看" onclick="location.href = 'https://github.com/SparrowOS/SparrowOS-Develop'">  
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(255, 5, 147), rgb(232, 58, 14)); border:0px;border-radius: 15px; width: 170px; height: 60px;" value="bilibili" onclick="location.href = 'https://space.bilibili.com/3493132895258964'">  
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(126, 255, 5), rgb(239, 204, 8));  border:0px;border-radius: 15px; width: 170px; height: 60px;" value="加入我们" onclick="location.href = 'join_us.html'">  
-        <input type="button" style="background: linear-gradient(to bottom right, rgb(255, 158, 51), rgb(255, 128, 0));  border:0px;border-radius: 15px; width: 170px; height: 60px;" value="关于我们" onclick="location.href = 'about_us.html'">  
+        <input type="button" class="custom-button" value="下载" onclick="location.href = 'download.html'">  
+        <input type="button" class="custom-button" value="在github上查看" onclick="location.href = 'https://github.com/SparrowOS/SparrowOS-Develop'">  
+        <input type="button" class="custom-button" value="bilibili" onclick="location.href = 'https://space.bilibili.com/3493132895258964'">  
+        <input type="button" class="custom-button" value="加入我们" onclick="location.href = 'join_us.html'">  
+        <input type="button" class="custom-button" value="关于我们" onclick="location.href = 'about_us.html'">
+<!-- 		<center>
+			浏览量：<span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span>👀 | 访客数：<span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span>👦
+		</center> -->
     </div>  
     <div class="footer">  
         <p style="color: dimgrey;" align="center">版权所有 ©2023-2025 SparrowOS, Inc. All rights reserved. ©2023-2025 SparrowOS 保留所有权利</p>  
