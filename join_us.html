@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>加入SparrowOS开发团队</title>
-    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="shortcut icon" href="data/logo.png">
     <style>
-        body {
-            background-image: url("img/background.png");
-            background-size: cover;
-        }        
+        body {  
+            background-image: url("data/background.png");  
+            background-size:cover;  
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat:no-repeat;
+        }         
         .container {
             width: 60%;
             margin: 1% auto 0;
@@ -24,6 +27,11 @@
 			height: 60px;
 			color: #000000;
 		}
+        .footer {  
+            position: fixed;  
+            bottom: 0;  
+            width: 100%;  
+        }
     </style>
 </head>
 <body>
@@ -35,5 +43,8 @@
     <div align="center">  
         <input type="button" class="custom-button" value="返回首页" onclick="location.href = 'https://sparrowos.github.io'">
     </div>
+    <div class="footer">  
+        <p style="color: dimgrey;" align="center">版权所有 ©2023-2025 SparrowOS, Inc. All rights reserved. ©2023-2025 SparrowOS 保留所有权利</p>  
+    </div>  
 </body>
 </html>

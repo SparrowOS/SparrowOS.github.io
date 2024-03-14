@@ -2,13 +2,16 @@
 <html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="shortcut icon" href="data/logo.png">
     <title>SparrowOS系统下载</title>
     <style>
-        body {
-            background-image: url("img/background.png");
-            background-size: cover;
-        }
+        body {  
+            background-image: url("data/background.png");  
+            background-size:cover;  
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat:no-repeat;
+        }  
         .container {
             width: 50%;
             margin: 1% auto 0;
@@ -24,14 +27,22 @@
 			height: 60px;
 			color: #000000;
 		}
+        .footer {  
+            position: fixed;  
+            bottom: 0;  
+            width: 100%;  
+        }
     </style>
 </head>
 <body>
-    <h1  class="container">由于还没有开发完成，所以暂时不提供iso文件下载，仅提供img软盘镜像。如确实需要，请在gtihub上下载，顺便给个star哟！</h1>
+    <h1  class="container">由于还没有开发完成，所以暂时不提供iso文件下载，仅提供data软盘镜像。如确实需要，请在gtihub上下载，顺便给个star哟！</h1>
     <div align="center">
         <input type="button" class="custom-button" value="在github上查看" onclick="location.href = 'https://github.com/SparrowOS/SparrowOS-Develop/releases'">
         <input type="button" class="custom-button" value="返回首页" onclick="location.href = 'https://sparrowos.github.io'">
-        <input type="button" class="custom-button" value="下载img软盘镜像" onclick="location.href = 'https://raw.githubusercontent.com/SparrowOS/SparrowOS-Develop/main/SparrowOS.img'">
+        <input type="button" class="custom-button" value="下载data软盘镜像" onclick="location.href = 'https://raw.githubusercontent.com/SparrowOS/SparrowOS-Develop/main/SparrowOS.data'">
     </div>
+    <div class="footer">  
+        <p style="color: dimgrey;" align="center">版权所有 ©2023-2025 SparrowOS, Inc. All rights reserved. ©2023-2025 SparrowOS 保留所有权利</p>  
+    </div>  
 </body>
 </html>
