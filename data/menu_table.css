@@ -5,59 +5,11 @@
 	background-color: #00a2e873;
 }
 
-.mtb1 {
-	position: absolute;
-	top: 14px;
-	left: 300px;
-	color: white;
-	font-size: 24px;
-}
-
-.mtb2 {
-	position: absolute;
-	top: 14px;
-	left: 375px;
-	color: white;
-	font-size: 24px;
-}
-
-.mtb3 {
-	position: absolute;
-	top: 14px;
-	left: 525px;
-	color: white;
-	font-size: 24px;
-}
-
-.mtb4 {
-	position: absolute;
-	top: 14px;
-	left: 650px;
-	color: white;
-	font-size: 24px;
-}
-
-.mtb5 {
-	position: absolute;
-	top: 14px;
-	left: 730px;
-	color: white;
-	font-size: 24px;
-}
-
-.mtbl {
-	position: absolute;
-	top: 14px;
-	left: calc(100% - 90px);
-	color: white;
-	font-size: 24px;
-}
-
 body {
     width: 100wh;
     height: 100%;
     color: #fff;
-    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg, #ff0000, #f15411, #e7df05, #60ea11, #03f9f1d9, #002be873, #9700e873, #ff0000f7);
     background-size: 400% 400%;
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
