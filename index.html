@@ -3,15 +3,9 @@
 <head>  
     <meta charset="UTF-8">  
     <title>SparrowOS</title>  
-    <link rel="shortcut icon" href="data/logo.png">  
-    <style>  
-        body {  
-            background-image: url("data/background.png");  
-            background-size:cover;  
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat:no-repeat;
-        }  
+    <link rel="shortcut icon" href="data/logo.png">
+    <link rel="stylesheet" type="text/css" href="./data/menu_table.css">
+    <style>
         .footer {  
             position: fixed;  
             bottom: 0;  
@@ -34,7 +28,33 @@
     </style>
 </head>  
 <body>
-    <div class="container">
+    <h1>觉得无聊？来点音乐试试？</h1>
+    <a href="#" id="playMusicButton">播放音乐</a>
+    <audio id="backgroundMusic" loop></audio>
+
+    <script>
+        var music = document.getElementById('backgroundMusic');
+        var playLink = document.getElementById('playMusicButton');
+        var musicList = ['music1.mp3', 'music2.mp3', 'music3.mp3', 'music4.mp3']; // 添加你的音乐文件
+        var isPlaying = false;
+
+        playLink.addEventListener('click', function(e) {
+            e.preventDefault(); // 阻止默认链接行为
+            if (isPlaying) {
+                music.pause();
+                playLink.textContent = '播放音乐';
+                isPlaying = false;
+            } else {
+                var randomIndex = Math.floor(Math.random() * musicList.length);
+                var randomMusic = 'data/' + musicList[randomIndex];
+                music.src = randomMusic;
+                music.play();
+                playLink.textContent = '暂停音乐';
+                isPlaying = true;
+            }
+        });
+    </script>
+    <div style="color: rgb(0, 0, 0);" class="container">
         <h1 align="center">SparrowOS</h1>  
         <h3 align="center">一个由几个学生独立开发的操作系统</h3>  
     </div>
